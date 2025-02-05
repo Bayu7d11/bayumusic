@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Be A Man - Dax</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="music/main.js"></script>
+</head>
+<body>
+    <div>
+        <h1>To Be A Man - Dax</h1>
+        <audio id="audio" style="display: none;">
+            <source src="music/Dax - To Be A Man (Lyrics).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>
+            <!-- Lirik lagu -->
+            I can't hide myself<br>
+            I don't expect you to understand<br>
+            I just hope I can explain<br>
+            What it's like to be a man<br>
+            It's a lonely road<br>
+            And they don't care 'bout what you know<br>
+            It's not 'bout how you feel<br>
+            But what you provide inside that home<br><br>
+            
+            Yeah, I know this life can really beat you down, uh<br>
+            You wanna scream but you won't make a sound, uh<br>
+            Got so much weight that you've been holdin'<br>
+            But won't show any emotion, as a man, that goes unspoken<br>
+            That we can't cry when life gets hard<br>
+            Unconditional love for women, children and dogs<br>
+            We know that we just have to play our parts<br>
+            And don't nobody give a damn about our broken hearts, yeah<br>
+            As a man, we gotta pave our way<br>
+            Our only function is to work and slave<br>
+            There's no respect for you if you ain't paid<br>
+            You're disregarded as a human and you can't complain<br>
+            And if you ever make it up and actually reach that place<br>
+            And find a woman that you love and give her your last name<br>
+            You'll feel the things that you provide is only why she stays<br>
+            And when you try to explain, you'll say<br>
+            I can't hide myself<br>
+            I don't expect you to understand<br>
+            I just hope I can explain<br>
+            What it's like to be a man (what it's like to be a man)<br>
+            It's a lonely road (it's a lonely road)<br>
+            And they don't care 'bout what you know (care 'bout what you know)<br>
+            It's not 'bout how you feel<br>
+            But what you provide inside that home<br><br>
+            
+            Don't give up, keep fightin'<br>
+            As a man, our son is our horizon<br>
+            And our fathers' actions play a role and we end up like him<br>
+            So they can't let us see them hurt<br>
+            'Cause we'll embody what we do and start a generational curse<br>
+            No wonder most men are so depressed<br>
+            All the things that they can't express<br>
+            They go to war, get thrown on the shelf<br>
+            Then go back to war with they mental health<br>
+            Then grab that bottle and ask for help<br>
+            Try to pull themselves out of hell<br>
+            Then fall back down and then realize<br>
+            That they gon' have to do it themselves<br>
+            It's the circle of life, as a man, you provide<br>
+            They don't know what you're worth 'til the day that you die<br>
+            And that's when they start cryin'<br>
+            Then move on to a man to confide in<br>
+            That's why we feel<br>
+            We can't hide ourselves<br>
+            We don't expect you to understand<br>
+            We just hope we can explain<br>
+            What it's like to be a man (what it's like to be a man)<br>
+            It's a lonely road (it's a lonely road)<br>
+            And you don't care 'bout what we know (care 'bout what we know)<br>
+            It's not 'bout how we feel<br>
+            But what we provide inside that home (inside that home)<br><br>
+            
+            That home<br>
+            It's not 'bout how we feel<br>
+            But what we provide inside that home (inside that home)
+        </p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i data-feather="arrow-left"></i></a></li> <!-- Ikon kembali -->
+            <li><a href="photograph.html"><i data-feather="skip-back"></i></a></li> <!-- Ikon mundur -->
+            <li><a href="#" id="play-pause"><i data-feather="play-circle"></i></a></li> <!-- Ikon putar/jeda -->
+            <li><a href="here_with_me.html"><i data-feather="skip-forward"></i></a></li> <!-- Ikon maju -->
+            <li><a href="#"><i data-feather="repeat"></i></a></li> <!-- Ikon ulang -->
+        </ul>
+    </nav>
+    <script>
+        feather.replace(); // Mengganti ikon dengan Feather Icons
+
+        document.getElementById('play-pause').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+</body>
+</html>

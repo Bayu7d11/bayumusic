@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="music/main.js"></script>
+</head>
+<body>
+    <div class="entrance-animation">
+        <h1>Song 2</h1>
+        <audio id="audio" style="display: none;">
+            <source src="music/song2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>
+            <!-- Lyrics for Song 2 -->
+        </p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i data-feather="arrow-left"></i></a></li> <!-- Ikon kembali -->
+            <li><a href="song1.html"><i data-feather="skip-back"></i></a></li> <!-- Ikon mundur -->
+            <li><a href="#" id="play-pause"><i data-feather="play-circle"></i></a></li> <!-- Ikon putar/jeda -->
+            <li><a href="song3.html"><i data-feather="skip-forward"></i></a></li> <!-- Ikon maju -->
+            <li><a href="#"><i data-feather="repeat"></i></a></li> <!-- Ikon ulang -->
+        </ul>
+    </nav>
+    <script>
+        feather.replace(); // Mengganti ikon dengan Feather Icons
+
+        document.getElementById('play-pause').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+</body>
+</html>

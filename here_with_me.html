@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here With Me - d4vd</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="music/main.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Here With Me- d4vd</h1>
+        <audio id="audio" style="display: none;">
+            <source src="music/d4vd - Here With Me [Official Music Video].mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>
+            <!-- Lirik lagu -->
+            Watch the sunrise along the coast<br>
+            As we're both getting old<br>
+            I can't describe what I'm feeling<br>
+            And all I know is we're going home<br>
+            So please don't let me go, oh<br>
+            Don't let me go, oh-oh-oh<br>
+            And if it's right<br>
+            I don't care how long it takes<br>
+            As long as I'm with you<br>
+            I've got a smile on my face<br>
+            Save your tears, it'll be okay<br>
+            All I know is you're here with me<br>
+            Oh, oh, oh, oh-oh-oh-oh-oh<br>
+            Watch the sunrise as we're getting old, oh-oh<br>
+            I can't describe, whoa-oh<br>
+            I wish I could live through every memory again<br>
+            Just one more time before we float off in the wind<br>
+            And all the time we spent<br>
+            Waiting for the light to take us in<br>
+            Have been the greatest moments of my life<br>
+            I don't care how long it takes<br>
+            As long as I'm with you, I've got a smile on my face<br>
+            Save your tears, it'll be okay<br>
+            Yeah, if with me<br>
+            Oh, oh, oh, oh-oh-oh-oh-oh<br>
+            I can't describe, oh, oh
+        </p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i data-feather="arrow-left"></i></a></li> <!-- Ikon kembali -->
+            <li><a href="to_be_a_man.html"><i data-feather="skip-back"></i></a></li> <!-- Ikon mundur -->
+            <li><a href="#" id="play-pause"><i data-feather="play-circle"></i></a></li> <!-- Ikon putar/jeda -->
+            <li><a href="drunk_text.html"><i data-feather="skip-forward"></i></a></li> <!-- Ikon maju -->
+            <li><a href="#"><i data-feather="repeat"></i></a></li> <!-- Ikon ulang -->
+        </ul>
+    </nav>
+    <script>
+        feather.replace(); // Mengganti ikon dengan Feather Icons
+
+        document.getElementById('play-pause').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+</body>
+</html>

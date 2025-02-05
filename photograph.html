@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photograph - Ed Sheeran</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="music/main.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Photograph - Ed Sheeran</h1>
+        <audio id="audio" style="display: none;">
+            <source src="music/Ed Sheeran - Photograph (Official Lyric Video).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>
+            <!-- Lirik lagu -->
+            Loving can hurt, loving can hurt sometimes<br>
+            But it's the only thing that I know<br>
+            When it gets hard, you know it can get hard sometimes<br>
+            It's the only thing that makes us feel alive<br><br>
+            
+            We keep this love in a photograph<br>
+            We made these memories for ourselves<br>
+            Where our eyes are never closing<br>
+            Our hearts were never broken<br>
+            And time's forever frozen, still<br><br>
+            
+            So you can keep me<br>
+            Inside the pocket of your ripped jeans<br>
+            Holding me close until our eyes meet<br>
+            You won't ever be alone, wait for me to come home<br><br>
+            
+            Loving can heal, loving can mend your soul<br>
+            And it's the only thing that I know<br>
+            I swear it will get easier, remember that we're never repeating ya<br>
+            And it's the only thing to take with us when we die<br><br>
+            
+            We keep this love in a photograph<br>
+            We made these memories for ourselves<br>
+            Where our eyes are never closing<br>
+            Our hearts were never broken<br>
+            And time's forever frozen, still<br><br>
+            
+            So you can keep me<br>
+            Inside the pocket of your ripped jeans<br>
+            Holding me close until our eyes meet<br>
+            You won't ever be alone<br>
+            And if you hurt me<br>
+            That's okay baby, there'll be worse things<br>
+            Inside these pages you just hold me<br>
+            And I won’t ever let you go<br>
+            Wait for me to come home<br>
+            Wait for me to come home<br>
+            Wait for me to come home<br>
+            Wait for me to come home<br><br>
+            
+            You can keep me<br>
+            Inside the necklace you bought when you were sixteen<br>
+            Next to your heartbeat where I should be<br>
+            Keep it deep within your soul<br>
+            And if you hurt me<br>
+            That's okay baby, there'll be worse things<br>
+            Inside these pages you just hold me<br>
+            And I won’t ever let you go<br><br>
+            
+            When I'm going, I will remember how you kissed me<br>
+            Under the lamppost back on Sixth street<br>
+            Hearing you whisper through the phone<br>
+            Wait for me to come home
+        </p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i data-feather="arrow-left"></i></a></li> <!-- Ikon kembali -->
+            <li><a href="a_little_piece_of_heaven.html"><i data-feather="skip-back"></i></a></li> <!-- Ikon mundur -->
+            <li><a href="#"><i data-feather="play-circle" id="play-pause"></i></a></li> <!-- Ikon putar/jeda -->
+            <li><a href="to_be_a_man.html"><i data-feather="skip-forward"></i></a></li> <!-- Ikon maju -->
+            <li><a href="#"><i data-feather="repeat"></i></a></li> <!-- Ikon ulang -->
+        </ul>
+    </nav>
+    <script>
+        feather.replace(); // Mengganti ikon dengan Feather Icons
+
+        document.getElementById('play-pause').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+</body>
+</html>
